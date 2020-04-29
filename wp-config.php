@@ -29,7 +29,7 @@ define( 'DB_USER', 'userOK0' );
 define( 'DB_PASSWORD', '3HUBFTlHVsQNdF8W' );
 
 /** MySQL hostname */
-define( 'DB_HOST', '172.30.136.84/mysql' );
+define( 'DB_HOST', '172.30.136.84/aytovillamuelas' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
