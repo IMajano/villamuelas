@@ -30,9 +30,6 @@
                     </fieldset>
                 </form>
             </div>
-            <?php
-               get_all_records();
-            ?>
         </div>
     </div>
 </body>
