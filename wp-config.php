@@ -13,7 +13,7 @@
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', getenv("DB_PASS"));
 define( 'DB_HOST', getenv("DB_HOST"));
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         ']E*2$e?Ikw&!Cn20iSF~k}[Vi$mY;otF|5P~Se4$Io~gk;64)Iqek)xJoMK6)s<y' );
-define( 'SECURE_AUTH_KEY',  'U;O Ik<$%TDcU&9%?wHqpJ&qH=X7pH4Cg9&7G/SQh70{3>rtoz&UV/pL]:UBL-LZ' );
-define( 'LOGGED_IN_KEY',    'XjzXE] gIBs&spt(xvrX[_px]]ONet`!dS&lp?f^uX.jn_3nz%<*-zvf0~1eE&|/' );
-define( 'NONCE_KEY',        '2]v0K^4QtX-fPT>r~+yJGN@@CB%+X:p/3JV;}mOH7H;+r%q/2G.AIL@}:gQ~DU+9' );
-define( 'AUTH_SALT',        '{|lFV;s&+In5:DtsPFvbRD#9DDSG?R_Zl*):NgnGdI%2X&b[8p[Y,.;MEP}~<%Ii' );
-define( 'SECURE_AUTH_SALT', '6r$(:MCM%=dPXsdk?40O1rX[Twc8[$WEG]R[qUU1@0ePY72^tO.V*iwd=3n+YQ60' );
-define( 'LOGGED_IN_SALT',   '%J!x:>R(@x~2P!qS~dU),0iC1<E-8hbtnG%H*MxO|n&z%saWhrYPMww+ok.HThYW' );
-define( 'NONCE_SALT',       'fpz~eZMvU(;w3M11{KroE;26A$r_dz=Dh!nDRiC2T-z+/Ai>Yuz<)l_0ik-hBi0j' );
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -73,9 +73,9 @@ $table_prefix = 'wp_';
  * in their development environments.
  *
  * For information on other constants that can be used for debugging,
- * visit the Codex.
+ * visit the documentation.
  *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
 
@@ -83,8 +83,8 @@ define( 'WP_DEBUG', false );
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+	define( 'ABSPATH', __DIR__ . '/' );
 }
 
 /** Sets up WordPress vars and included files. */
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';
